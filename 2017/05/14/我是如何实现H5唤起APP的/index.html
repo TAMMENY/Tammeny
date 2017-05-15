@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://www.tammeny.com/2017/05/14/我是如何实现H5唤起APP的/index.html">
 <meta property="og:site_name" content="唐文雍的个人网站">
 <meta property="og:description" content="需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；…">
-<meta property="og:updated_time" content="2017-05-14T15:12:22.000Z">
+<meta property="og:updated_time" content="2017-05-15T13:32:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我是如何实现H5唤起APP的">
 <meta name="twitter:description" content="需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；…">
@@ -203,7 +203,7 @@
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#需求"><span class="post-toc-text">需求</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#唤起的原理"><span class="post-toc-text">唤起的原理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#局限"><span class="post-toc-text">局限</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#微信中唤起"><span class="post-toc-text">微信中唤起</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浏览器唤起"><span class="post-toc-text">浏览器唤起</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我的兼容方案"><span class="post-toc-text">我的兼容方案</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#后续"><span class="post-toc-text">后续</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#需求"><span class="post-toc-text">需求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#唤起的原理"><span class="post-toc-text">唤起的原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#局限"><span class="post-toc-text">局限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#微信中唤起"><span class="post-toc-text">微信中唤起</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#浏览器唤起"><span class="post-toc-text">浏览器唤起</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的兼容方案"><span class="post-toc-text">我的兼容方案</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#后续"><span class="post-toc-text">后续</span></a></li></ol>
             </nav>
             
         </aside>
@@ -211,17 +211,17 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。</p>
-<h2 id="唤起的原理"><a href="#唤起的原理" class="headerlink" title="唤起的原理"></a>唤起的原理</h2><p>浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。</p>
-<h2 id="局限"><a href="#局限" class="headerlink" title="局限"></a>局限</h2><ol>
+            <h4 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h4><p>在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。</p>
+<h4 id="唤起的原理"><a href="#唤起的原理" class="headerlink" title="唤起的原理"></a>唤起的原理</h4><p>浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。</p>
+<h4 id="局限"><a href="#局限" class="headerlink" title="局限"></a>局限</h4><ol>
 <li>APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起；</li>
 <li>JS无法准确判断本地是否安装了APP；</li>
 <li>部分浏览器不支持唤起；<br>…</li>
 </ol>
-<h2 id="微信中唤起"><a href="#微信中唤起" class="headerlink" title="微信中唤起"></a>微信中唤起</h2><p>微信上禁用了唤起APP接口，无法直接唤起APP，常规的做法是引导用户使用普通浏览器打开H5页面。但如果APP使用了深度链接，可以直接在各种APP之间跳转，包括微信、微博、普通浏览器。</p>
-<h2 id="浏览器唤起"><a href="#浏览器唤起" class="headerlink" title="浏览器唤起"></a>浏览器唤起</h2><p>大多数普通浏览器可以通过以下方式直接唤起<br><code>window.location.href = scheme</code>或者<code>&lt;a href=&quot;scheme&quot;&gt;打开APP&lt;/a&gt;</code></p>
-<h2 id="我的兼容方案"><a href="#我的兼容方案" class="headerlink" title="我的兼容方案"></a>我的兼容方案</h2><p>JS无法判断某个APP是否有安装，网上很多方案是通过计算时间差，但很不稳定。我的兼容方案是：无论客户端有无安装APP，无论浏览器兼容与否，当用户点击“打开APP”时，通过<code>window.location.href = scheme</code>尝试唤起APP，同时3秒之后打开下载页面。</p>
-<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>没有完美的方案，大家根据自己实际业务需求进行调整，灵活应用。下一篇文章我会贴出具体代码，并做成JS插件，敬请期待。</p>
+<h4 id="微信中唤起"><a href="#微信中唤起" class="headerlink" title="微信中唤起"></a>微信中唤起</h4><p>微信上禁用了唤起APP接口，无法直接唤起APP，常规的做法是引导用户使用普通浏览器打开H5页面。但如果APP使用了深度链接，可以直接在各种APP之间跳转，包括微信、微博、普通浏览器。</p>
+<h4 id="浏览器唤起"><a href="#浏览器唤起" class="headerlink" title="浏览器唤起"></a>浏览器唤起</h4><p>大多数普通浏览器可以通过以下方式直接唤起<br><code>window.location.href = scheme</code>或者<code>&lt;a href=&quot;scheme&quot;&gt;打开APP&lt;/a&gt;</code></p>
+<h4 id="我的兼容方案"><a href="#我的兼容方案" class="headerlink" title="我的兼容方案"></a>我的兼容方案</h4><p>JS无法判断某个APP是否有安装，网上很多方案是通过计算时间差，但很不稳定。我的兼容方案是：无论客户端有无安装APP，无论浏览器兼容与否，当用户点击“打开APP”时，通过<code>window.location.href = scheme</code>尝试唤起APP，同时3秒之后打开下载页面。</p>
+<h4 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h4><p>没有完美的方案，大家根据自己实际业务需求进行调整，灵活应用。下一篇文章我会贴出具体代码，并做成JS插件，敬请期待。</p>
 
             <blockquote>
                 <p>
