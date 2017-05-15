@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.tammeny.com/"/>
-  <updated>2017-05-15T13:32:52.000Z</updated>
+  <updated>2017-05-15T13:45:40.000Z</updated>
   <id>http://www.tammeny.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://www.tammeny.com/2017/05/14/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0H5%E5%94%A4%E8%B5%B7APP%E7%9A%84/"/>
     <id>http://www.tammeny.com/2017/05/14/我是如何实现H5唤起APP的/</id>
     <published>2017-05-14T08:59:47.000Z</published>
-    <updated>2017-05-15T13:32:52.000Z</updated>
+    <updated>2017-05-15T13:45:40.000Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h4><p>在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。</p>
+    <content type="html"><![CDATA[<h4 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h4><p>在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。</p>
 <h4 id="唤起的原理"><a href="#唤起的原理" class="headerlink" title="唤起的原理"></a>唤起的原理</h4><p>浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。</p>
 <h4 id="局限"><a href="#局限" class="headerlink" title="局限"></a>局限</h4><ol>
 <li>APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起；</li>
@@ -37,8 +37,8 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;需求&quot;&gt;&lt;a href=&quot;#需求&quot; class=&quot;headerlink&quot; title=&quot;需求&quot;&gt;&lt;/a&gt;需求&lt;/h4&gt;&lt;p&gt;在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。&lt;/p&gt;
-&lt;h4 id=&quot;唤起的原理&quot;&gt;&lt;a
+      &lt;h4 id=&quot;业务需求&quot;&gt;&lt;a href=&quot;#业务需求&quot; class=&quot;headerlink&quot; title=&quot;业务需求&quot;&gt;&lt;/a&gt;业务需求&lt;/h4&gt;&lt;p&gt;在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。&lt;/p&gt;
+&lt;h4 id=&quot;唤
     
     </summary>
     

@@ -10,17 +10,17 @@
   
   
   <meta name="keywords" content="">
-  <meta name="description" content="需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；…">
+  <meta name="description" content="业务需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；">
 <meta name="keywords" content="唐文雍的博客,web前端,html5,javascript,css3,angular,reactjs,vuejs,webpack">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我是如何实现H5唤起APP的">
 <meta property="og:url" content="http://www.tammeny.com/2017/05/14/我是如何实现H5唤起APP的/index.html">
 <meta property="og:site_name" content="唐文雍的个人网站">
-<meta property="og:description" content="需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；…">
-<meta property="og:updated_time" content="2017-05-15T13:32:52.000Z">
+<meta property="og:description" content="业务需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；">
+<meta property="og:updated_time" content="2017-05-15T13:45:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我是如何实现H5唤起APP的">
-<meta name="twitter:description" content="需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；…">
+<meta name="twitter:description" content="业务需求在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。 唤起的原理浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。 局限 APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起； JS无法准确判断本地是否安装了APP； 部分浏览器不支持唤起；">
   
     <link rel="alternative" href="/atom.xml" title="唐文雍的个人网站" type="application/atom+xml">
   
@@ -203,7 +203,7 @@
 
             
             <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#需求"><span class="post-toc-text">需求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#唤起的原理"><span class="post-toc-text">唤起的原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#局限"><span class="post-toc-text">局限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#微信中唤起"><span class="post-toc-text">微信中唤起</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#浏览器唤起"><span class="post-toc-text">浏览器唤起</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的兼容方案"><span class="post-toc-text">我的兼容方案</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#后续"><span class="post-toc-text">后续</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#业务需求"><span class="post-toc-text">业务需求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#唤起的原理"><span class="post-toc-text">唤起的原理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#局限"><span class="post-toc-text">局限</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#微信中唤起"><span class="post-toc-text">微信中唤起</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#浏览器唤起"><span class="post-toc-text">浏览器唤起</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#我的兼容方案"><span class="post-toc-text">我的兼容方案</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#后续"><span class="post-toc-text">后续</span></a></li></ol>
             </nav>
             
         </aside>
@@ -211,7 +211,7 @@
         <div class="post-main">
 
             <div class="post-content" id="post-content" itemprop="postContent">
-            <h4 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h4><p>在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。</p>
+            <h4 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h4><p>在外部应用浏览H5页面，点页面的“打开APP”按钮，如有安装APP，就唤起，否则跳转到下载页面。</p>
 <h4 id="唤起的原理"><a href="#唤起的原理" class="headerlink" title="唤起的原理"></a>唤起的原理</h4><p>浏览器通过Url Scheme打开APP，像普通的url链接一样，通过a标签或者location.href打开即可唤起APP。</p>
 <h4 id="局限"><a href="#局限" class="headerlink" title="局限"></a>局限</h4><ol>
 <li>APP未使用深度链接，微信、微博等其他社交软件无法直接唤起APP，只能通过浏览器唤起；</li>
