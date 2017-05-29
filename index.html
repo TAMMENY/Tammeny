@@ -149,6 +149,93 @@
       <ul class="post-list">
   
     <li class="post-list-item">
+        <article id="post-NodeJS简单实现一条爬虫/未命名文件夹/package" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/05/29/NodeJS简单实现一条爬虫/未命名文件夹/package/">No title</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2017-05-29T03:34:28.000Z" itemprop="datePublished" class="post-time">
+  2017-05-29
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        {"name":"a","version":"1.0.0","description":"d","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":"","license":"ISC"}
+    
+    </div>
+    
+</article>
+    </li>
+  
+    <li class="post-list-item">
+        <article id="post-NodeJS简单实现一条爬虫" 
+  class="article article-type-post" itemprop="blogPost">
+     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/05/28/NodeJS简单实现一条爬虫/">NodeJS简单实现一条爬虫</a>
+    </h3>
+  
+
+
+
+    <div class="post-meta">
+        <time datetime="2017-05-28T15:56:28.000Z" itemprop="datePublished" class="post-time">
+  2017-05-28
+</time>
+
+        
+
+ 
+    </div>
+    
+    <div class="post-content" id="post-content" itemprop="postContent" >
+    
+        <h3 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h3><p>抓取豆瓣网站下热门的电影。</p>
+<h3 id="依赖包介绍"><a href="#依赖包介绍" class="headerlink" title="依赖包介绍"></a>依赖包介绍</h3><ol>
+<li>request：让http请求变得超级简单，同时支持https和重定向，用于发送请求获取网页内容；</li>
+<li>cheerio：是一个很好的解析库，服务端版本的jquery，用于查找网页内容。</li>
+</ol>
+<h3 id="原理介绍"><a href="#原理介绍" class="headerlink" title="原理介绍"></a>原理介绍</h3><p>网络爬虫的实现原理很简单，其实就相当于我们浏览网页，本文的demo是通过nodejs的request模块发送http请求，加载目标网页，再通过cheerio查找想要的内容。</p>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm init Crawler</div><div class="line">npm install request --save</div><div class="line">npm install cheerio --save</div></pre></td></tr></table></figure>
+<p>在项目根目录新建index.js并插入以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">var request = require(&apos;request&apos;);</div><div class="line">var cheerio = require(&apos;cheerio&apos;);</div><div class="line"></div><div class="line">//获取热门电影</div><div class="line">function getHotMovie(url)&#123;</div><div class="line">	request(url, function(err, response, body) &#123;</div><div class="line">        if (!err &amp;&amp; response.statusCode == 200) &#123;</div><div class="line">            $ = cheerio.load(body);</div><div class="line">            var content = $(&quot;.ui-slide-content li.ui-slide-item&quot;);   //获取电影列表DOM</div><div class="line">            var length = content.length;</div><div class="line">            var list = [];</div><div class="line">            while (length --) &#123;</div><div class="line">            	var title = $(content[length]).data(&quot;title&quot;);   //获取电影名称</div><div class="line">                title &amp;&amp; list.push(title);</div><div class="line">            &#125;</div><div class="line">            console.info(&quot;热门电影有：&quot;, list);</div><div class="line">        &#125;else&#123;</div><div class="line">            console.info(&quot;网页加载失败：&quot;, err);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line">getHotMovie(&quot;https://movie.douban.com/&quot;);</div></pre></td></tr></table></figure></p>
+<h3 id="开始抓取"><a href="#开始抓取" class="headerlink" title="开始抓取"></a>开始抓取</h3><p>运行<code>node index.js</code>开始抓取内容，最终获得以下结果：<br><img src="/2017/05/28/NodeJS简单实现一条爬虫/crawler.png" alt="NodeJS简单实现一条爬虫运行结果" title="NodeJS简单实现一条爬虫运行结果"></p>
+<h3 id="问答"><a href="#问答" class="headerlink" title="问答"></a>问答</h3><ol>
+<li>如何应对反爬虫策略？<br>如伪造浏览器header，使用代理ip，限制规定时间内请求次数等。</li>
+<li>如何读写excel？<ul>
+<li>node-xlsx: 基于Node.js解析excel文件数据及生成excel文件，仅支持xlsx格式文件；</li>
+<li>excel-parser: 基于Node.js解析excel文件数据，支持xls及xlsx格式文件；</li>
+<li>excel-export : 基于Node.js将数据生成导出excel文件，生成文件格式为xlsx；</li>
+<li>node-xlrd: 基于node.js从excel文件中提取数据，仅支持xls格式文件；</li>
+<li>js-xlsx: 是目前Github上star数量最多的处理Excel的库，功能强大，但上手难度稍大。</li>
+</ul>
+</li>
+<li>如何抓取分页数据？<br>分析前几页链接的变化规律，通常url后面会有个数字递增，这就是页码了。</li>
+</ol>
+
+    
+    </div>
+    
+</article>
+    </li>
+  
+    <li class="post-list-item">
         <article id="post-我是如何实现H5唤起APP的" 
   class="article article-type-post" itemprop="blogPost">
      
