@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.tammeny.com/"/>
-  <updated>2017-05-29T04:09:42.000Z</updated>
+  <updated>2017-05-29T06:26:33.000Z</updated>
   <id>http://www.tammeny.com/</id>
   
   <author>
@@ -16,11 +16,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Web前端收藏夹</title>
+    <link href="http://www.tammeny.com/2017/05/29/Web%E5%89%8D%E7%AB%AF%E6%94%B6%E8%97%8F%E5%A4%B9/"/>
+    <id>http://www.tammeny.com/2017/05/29/Web前端收藏夹/</id>
+    <published>2017-05-29T05:47:44.000Z</published>
+    <updated>2017-05-29T06:26:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h3><ol>
+<li><a href="http://realfavicongenerator.net/" target="_blank" rel="external">RealFaviconGenerator</a>：favicon生成器，兼容所有平台的所有浏览器，只需上传png图片，就可以导出适用于各个平台的icon，同时生成对应的html。</li>
+</ol>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><h3 id="AngularJS"><a href="#AngularJS" class="headerlink" title="AngularJS"></a>AngularJS</h3><h3 id="ReactJS"><a href="#ReactJS" class="headerlink" title="ReactJS"></a>ReactJS</h3><h3 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h3><h3 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h3><h3 id="文章精选"><a href="#文章精选" class="headerlink" title="文章精选"></a>文章精选</h3><h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><ol>
+<li><a href="http://xianbai.me/learn-md/index.html" target="_blank" rel="external">Markdown 入门参考</a></li>
+<li><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">ECMAScript 6 入门</a>：《ECMAScript 6 入门》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性，作者是阮一峰。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;实用工具&quot;&gt;&lt;a href=&quot;#实用工具&quot; class=&quot;headerlink&quot; title=&quot;实用工具&quot;&gt;&lt;/a&gt;实用工具&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://realfavicongenerator.net/&quot; target=&quot;_blan
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>NodeJS简单实现一条爬虫</title>
     <link href="http://www.tammeny.com/2017/05/28/NodeJS%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E6%9D%A1%E7%88%AC%E8%99%AB/"/>
     <id>http://www.tammeny.com/2017/05/28/NodeJS简单实现一条爬虫/</id>
     <published>2017-05-28T15:56:28.000Z</published>
-    <updated>2017-05-29T04:09:42.000Z</updated>
+    <updated>2017-05-29T05:28:41.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h3><p>抓取豆瓣网站下热门的电影。</p>
 <h3 id="依赖包介绍"><a href="#依赖包介绍" class="headerlink" title="依赖包介绍"></a>依赖包介绍</h3><ol>
@@ -52,6 +78,8 @@
     
     </summary>
     
+    
+      <category term="nodejs" scheme="http://www.tammeny.com/tags/nodejs/"/>
     
   </entry>
   
