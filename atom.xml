@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.tammeny.com/"/>
-  <updated>2017-05-29T03:34:28.000Z</updated>
+  <updated>2017-05-29T04:09:42.000Z</updated>
   <id>http://www.tammeny.com/</id>
   
   <author>
@@ -14,24 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://www.tammeny.com/2017/05/29/NodeJS%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E6%9D%A1%E7%88%AC%E8%99%AB/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9/package/"/>
-    <id>http://www.tammeny.com/2017/05/29/NodeJS简单实现一条爬虫/未命名文件夹/package/</id>
-    <published>2017-05-29T03:34:28.000Z</published>
-    <updated>2017-05-29T03:34:28.000Z</updated>
-    
-    <content type="html"><![CDATA[{"name":"a","version":"1.0.0","description":"d","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":"","license":"ISC"}]]></content>
-    
-    <summary type="html">
-    
-      {&quot;name&quot;:&quot;a&quot;,&quot;version&quot;:&quot;1.0.0&quot;,&quot;description&quot;:&quot;d&quot;,&quot;main&quot;:&quot;index.js&quot;,&quot;scripts&quot;:{&quot;test&quot;:&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;},&quot;author&quot;:
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>NodeJS简单实现一条爬虫</title>
