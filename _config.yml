@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 唐文雍的个人博客
-subtitle:
-description:
-keywords:
+title: 唐文雍的博客
+subtitle: Tammeny‘s Blog
+description: 专注于前端但又不只是前端
+keywords: 唐文雍的博客,唐文雍的简历,tammeny blog
 author: 唐文雍
 language:
 timezone:
