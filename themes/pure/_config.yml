@@ -38,7 +38,7 @@ site:
 
 # config
 config:
-  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
+  skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
@@ -100,18 +100,18 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: tammeny  # github username
 
 # Comment
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine  # 启用哪种评论系统
+  type: livere  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 
   livere:
-    uid: # enter youyan uid 
+    uid: MTAyMC8zODA1Ny8xNDU4Nw== # enter youyan uid 
   gitment:
     githubID: 
     repo: 
@@ -141,7 +141,7 @@ comment:
   # https://api.douban.com/v2/movie/subject/:id 单个电影信息
   # https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
-  user: # 豆瓣用户名
+  user: medev # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
   
@@ -151,8 +151,8 @@ pv:
     enable: false  # 不蒜子统计
   leancloud:
     enable: false  # leancloud统计
-    app_id: # leancloud <AppID>
-    app_key: # leancloud <AppKey>
+    app_id: 4kRDok8sdhBjvckA6wqwS8Uc-gzGzoHsz # leancloud <AppID>
+    app_key: 4czFQDuB7BjrN7bCkwQwMVVY # leancloud <AppKey>
         
 # wordcount
 postCount:
@@ -164,7 +164,7 @@ postCount:
 plugins:
   google_analytics: # enter the tracking ID for your Google Analytics
   google_site_verification: # enter Google site verification code
-  baidu_analytics: # enter Baidu Analytics hash key
+  baidu_analytics: c728393aa0af9e4cfeb34198cb322395 # enter Baidu Analytics hash key
   tencent_analytics: 
   
 # Miscellaneous
@@ -180,7 +180,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 唐文雍
   author_title: Web前端工程师
-  author_description: 个人简介。
+  author_description: 专注于前端但又不只是前端
   location: Guangzhou, China
   follow: https://github.com/tammeny
   # Social Links
@@ -197,19 +197,19 @@ profile:
   # My Skills 
   skills:
     Git: ★★★☆☆
-    Gulp: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
+    Node: ★★★☆☆
+    Javascript: ★★★★☆
+    HTML+CSS: ★★★★☆
+    Vue: ★★★★☆
+    Angular: ★★★☆☆
+    React: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/tammeny
+    Blog: http://www.tammeny.com
+    微博: http://weibo.com/tammeny
+    花瓣: http://huaban.com/tammeny
+    Behance: https://www.behance.net/tammeny
   # My Personal Labels
   labels:
     - 前端
