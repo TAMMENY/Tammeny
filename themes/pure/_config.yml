@@ -212,11 +212,13 @@ profile:
     Behance: https://www.behance.net/tammeny
   # My Personal Labels
   labels:
-    - 前端
-    - 前端开发
-    - 前端重构
     - Web前端
-    - 网页重构
+    - Javascript
+    - Vue
+    - Angular
+    - React
+    - HTML+CSS
+    - Node
   # My Personal Works
   works:
     name:
@@ -224,5 +226,4 @@ profile:
       date: 2016
   # My Personal Projects
   projects:
-    cofess/gulp-startpro: http://www.nas.link
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+    区块链网址导航: http://www.nas.link
