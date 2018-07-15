@@ -202,7 +202,7 @@ profile:
     HTML+CSS: ★★★★☆
     Vue: ★★★★☆
     Angular: ★★★☆☆
-    React: ★★★☆☆
+    React: ★★☆☆☆
   # My Personal Links
   links:
     Github: https://github.com/tammeny
@@ -221,9 +221,15 @@ profile:
     - Node
   # My Personal Works
   works:
-    name:
-      link: http://www.tammeny.com
-      date: 2016
+    星云导航:
+      link: http://www.nas.link
+      date: 2018
+    聚名片:
+      link: http://card.nas.link
+      date: 2018
+    不良电话曝光台:
+      link: http://bg.nas.link
+      date: 2018
   # My Personal Projects
-  projects:
-    区块链网址导航: http://www.nas.link
+  # projects:
+  #   区块链网址导航: http://www.nas.link
