@@ -6,7 +6,6 @@ tags:
 - 爬虫
 - Node
 toc: true
-sidebar: none
 ---
 ## 需求
 抓取豆瓣网站下热门的电影。
