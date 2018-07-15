@@ -96,3 +96,11 @@ neat_js:
   compress:
   exclude:
     - '*.min.js' 
+
+# 使用Google翻译，百度翻译和有道翻译将Hexo中的汉字标题转成英文标题
+translate_title:
+  translate_way: youdao    #google | baidu | youdao
+  youdao_api_key: 224a68039c54e3d8
+  youdao_keyfrom: www.tammeny.com
+  is_need_proxy: false     #true | false
+  proxy_url: http://localhost:8123

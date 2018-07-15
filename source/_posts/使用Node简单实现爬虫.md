@@ -25,7 +25,7 @@ npm install request --save
 npm install cheerio --save
 ```
 在项目根目录新建`index.js`并插入以下代码：
-```
+```javascript
 var request = require('request');
 var cheerio = require('cheerio');
 //获取热门电影

@@ -5543,7 +5543,9 @@ pre,
 
 code {
   text-shadow: 0 1px #fff;
-  padding: 0 0.3em;
+  background-color: #eee;
+  padding: 0 0.4em;
+  border-radius: 2px;
 }
 
 pre code {
