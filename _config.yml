@@ -78,7 +78,9 @@ theme: pure
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  message: update
+  repo: root@47.254.38.128:/www/wwwroot/www.tammeny.com.git,master
 
 # hexo-neat
 neat_enable: true
