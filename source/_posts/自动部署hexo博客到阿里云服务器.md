@@ -1,9 +1,9 @@
 ---
 title: 自动部署hexo博客到阿里云服务器
-categories: Hexo
+categories: 自动化
 toc: true
 date: 2018-07-17 23:03:44
-tags: 自动化
+tags: Hexo
 ---
 
 # 前言

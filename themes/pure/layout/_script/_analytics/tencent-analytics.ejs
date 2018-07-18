@@ -1,1 +1,12 @@
-<script defer type="text/javascript" src="http://tajs.qq.com/stats?sId=<%= theme.plugins.tencent_analytics %>" charset="UTF-8"></script>
+<script defer>
+    var _mtac = {};
+    (function() {
+        var mta = document.createElement("script");
+        mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "<%= theme.plugins.tencent_analytics %>");
+
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+</script>
