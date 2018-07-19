@@ -207,9 +207,7 @@ profile:
   links:
     Github: https://github.com/tammeny
     Blog: http://www.tammeny.com
-    微博: http://weibo.com/tammeny
-    花瓣: http://huaban.com/tammeny
-    Behance: https://www.behance.net/tammeny
+    SegmentFault: https://segmentfault.com/u/tammeny
   # My Personal Labels
   labels:
     - Web前端
