@@ -80,7 +80,9 @@ theme: pure
 deploy:
   type: git
   message: update
-  repo: root@47.254.38.128:/www/wwwroot/www.tammeny.com.git,master
+  repo:
+    gitlab: root@47.254.38.128:/www/wwwroot/www.tammeny.com.git,master
+    github: https://github.com/Tammeny/blog.git,master
 
 # hexo-neat
 neat_enable: true
