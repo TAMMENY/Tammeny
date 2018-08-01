@@ -187,11 +187,11 @@ profile:
   social:
     links:
       github: https://github.com/tammeny
+      segmentfault: https://segmentfault.com/u/tammeny
       weibo: http://weibo.com/tammeny
       twitter: https://twitter.com/tammenytang
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/tammeny
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
