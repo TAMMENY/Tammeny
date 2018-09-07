@@ -3,7 +3,7 @@ title: 自动同步gitlab项目到github
 categories: 自动化
 toc: true
 date: 2018-07-31 10:30:34
-tags: gitlab
+tags: GitLab
 ---
 
 ## 需求

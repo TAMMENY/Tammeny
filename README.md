@@ -13,3 +13,6 @@
 #### 自动化
 - [自动部署hexo博客到阿里云服务器](./source/_posts/自动部署hexo博客到阿里云服务器.md)
 - [自动同步gitlab项目到github](./source/_posts/自动同步gitlab项目到github.md)
+
+### JavaScript
+- [JavaScript中forEach(),map(),filter(),find(),every(),some()的使用方法](./source/_posts/JavaScript中forEach-map-filter-find-every-some-的使用方法.md)
