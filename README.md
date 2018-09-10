@@ -1,5 +1,5 @@
 ## 介绍
-本博客基于 [hexo](https://hexo.io) 搭建，使用 [pure](https://github.com/cofess/hexo-theme-pure) 主题，网址 [https://www.tammeny.com](https://www.tammeny.com)。
+本博客基于 [hexo](https://hexo.io) 搭建，使用 [pure](https://github.com/cofess/hexo-theme-pure) 主题，网址 [https://www.tangwenyong.com](https://www.tangwenyong.com)。
 ## 开始
 1. 安装依赖 `npm i`
 2. 本地运行 `hexo s`

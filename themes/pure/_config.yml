@@ -187,7 +187,7 @@ profile:
   social:
     links:
       github: https://github.com/tammeny
-      segmentfault: https://segmentfault.com/u/tammeny
+      segmentfault: https://segmentfault.com/u/tangwenyong
       weibo: http://weibo.com/tammeny
       twitter: https://twitter.com/tammenytang
       # facebook: /
@@ -206,8 +206,8 @@ profile:
   # My Personal Links
   links:
     Github: https://github.com/tammeny
-    Blog: http://www.tammeny.com
-    SegmentFault: https://segmentfault.com/u/tammeny
+    Blog: http://www.tangwenyong.com
+    SegmentFault: https://segmentfault.com/u/tangwenyong
   # My Personal Labels
   labels:
     - Web前端

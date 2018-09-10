@@ -17,7 +17,7 @@ sidebar: custom
   address: '广东省广州市',
   education: '大专',
   github: 'https://github.com/tammeny',
-  blog: 'http://www.tammeny.com',
+  blog: 'http://www.tangwenyong.com',
   email: 'tammeny@qq.com',
   description: '专注于前端但又不只是前端',
 
