@@ -102,6 +102,3 @@ var some1 = array1.some(function(item){
 console.info(some1);
 // true;
 ```
-
-## 面试题
-未完待续...
