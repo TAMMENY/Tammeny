@@ -179,8 +179,8 @@ profile:
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 唐文雍
-  author_title: Web前端工程师
-  author_description: 专注于前端但又不只是前端
+  author_title: 前端攻城师
+  author_description: 专注前端前沿技术，探寻业界深邃思想
   location: Guangzhou, China
   follow: https://github.com/tammeny
   # Social Links
@@ -204,10 +204,10 @@ profile:
     Angular: ★★★☆☆
     React: ★★☆☆☆
   # My Personal Links
-  links:
-    Github: https://github.com/tammeny
-    Blog: http://www.tangwenyong.com
-    SegmentFault: https://segmentfault.com/u/tangwenyong
+  links: false
+    # Github: https://github.com/tammeny
+    # Blog: http://www.tangwenyong.com
+    # SegmentFault: https://segmentfault.com/u/tangwenyong
   # My Personal Labels
   labels:
     - Web前端

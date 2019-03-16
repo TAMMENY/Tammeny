@@ -19,7 +19,7 @@ sidebar: custom
   github: 'https://github.com/tammeny',
   blog: 'http://www.tangwenyong.com',
   email: 'tammeny@qq.com',
-  description: '专注于前端但又不只是前端',
+  description: '专注前端前沿技术，探寻业界深邃思想',
 
   skills: [
     ['Html', 'Javascript', 'jQuery', 'CSS', 'ES6', 'Node'],

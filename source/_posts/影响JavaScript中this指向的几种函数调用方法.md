@@ -1,5 +1,5 @@
 ---
-title: 影响this指向的几种函数调用方法
+title: 影响JavaScript中this指向的几种函数调用方法
 categories: JavaScript
 toc: true
 date: 2018-11-11 15:40:30
@@ -71,5 +71,6 @@ console.info(father.getName.call(child)); // 输出chy
 console.info(father.getName.apply(child)); // 输出chy
 ```
 下一篇文章我将重点介绍call和apply。
+[理解JavaScript中的call-apply和bind方法](https://www.tangwenyong.com/2018/11/12/理解JavaScript中的call-apply和bind方法/)
 ## 最后
 将this理解透彻，是一个jser必须要做的事情。

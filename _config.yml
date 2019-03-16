@@ -5,7 +5,7 @@
 # Site
 title: 唐文雍的博客
 subtitle: Tammeny‘s Blog
-description: 专注于前端但又不只是前端
+description: 专注前端前沿技术，探寻业界深邃思想
 keywords: 唐文雍的博客,唐文雍的简历,tammeny blog
 author: 唐文雍
 language: zh-CN
@@ -80,7 +80,7 @@ theme: pure
 deploy:
   type: git
   message: update
-  repo: root@47.254.38.128:/www/wwwroot/www.tammeny.com.git,master
+  repo: root@144.34.151.145:/www/wwwroot/www.tangwenyong.com.git,master
 
 # hexo-neat
 neat_enable: true
