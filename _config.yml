@@ -6,7 +6,7 @@
 title: 唐文雍的博客
 subtitle: Tammeny‘s Blog
 description: 专注前端前沿技术，探寻业界深邃思想
-keywords: 唐文雍的博客,唐文雍的简历,tammeny blog
+keywords: JavaScript/HTML/CSS, Vue/React/Angular, NodeJS/ExpressJs, Webpack/Rollup, 设计模式, 数据结构与算法, 前端架构, 前端工程化, 人工智能等相关技术总结与分享
 author: 唐文雍
 language: zh-CN
 timezone:
@@ -17,7 +17,6 @@ url: http://www.tangwenyong.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
-
 # Directory
 source_dir: source
 public_dir: public
