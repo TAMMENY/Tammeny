@@ -11,44 +11,7 @@ tags: 数据结构与算法
 
 ## 大O表示法
 表示代码执行所耗费的时间/空间随数据规模增长的变化趋势，用来衡量一个算法的性能和复杂程度，通常通过以下函数表示，按耗费时间从小到大排列:
-<table>
-  <tr>
-    <th>符号</th>
-    <th>名称</th>
-  </tr>
-  <tr>
-    <td>O(1)</td>
-    <td>常数阶</td>
-  </tr>
-  <tr>
-    <td>O(logn)</td>
-    <td>对数阶</td>
-  </tr>
-  <tr>
-    <td>O(n)</td>
-    <td>线性阶</td>
-  </tr>
-  <tr>
-    <td>O(nlogn)</td>
-    <td>nlogn阶</td>
-  </tr>
-  <tr>
-    <td>O(n<sup>2</sup>)</td>
-    <td>平方阶</td>
-  </tr>
-  <tr>
-    <td>O(n<sup>3</sup>)</td>
-    <td>立方阶</td>
-  </tr>
-  <tr>
-    <td>O(2<sup>n</sup>)</td>
-    <td>指数阶</td>
-  </tr>
-  <tr>
-    <td>O(n!)</td>
-    <td>阶乘阶</td>
-  </tr>
-</table>
+<table><tr><th>符号</th><th>名称</th></tr><tr><td>O(1)</td><td>常数阶</td></tr><tr><td>O(logn)</td><td>对数阶</td></tr><tr><td>O(n)</td><td>线性阶</td></tr><tr><td>O(nlogn)</td><td>nlogn阶</td></tr><tr><td>O(n<sup>2</sup>)</td><td>平方阶</td></tr><tr><td>O(n<sup>3</sup>)</td><td>立方阶</td></tr><tr><td>O(2<sup>n</sup>)</td><td>指数阶</td></tr><tr><td>O(n!)</td><td>阶乘阶</td></tr></table>
 
 ## 时间复杂度
 评估执行程序所需的时间，可以估算程序对CPU的使用程度。下面分析常用的时间复杂度。
