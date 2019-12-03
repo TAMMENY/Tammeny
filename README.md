@@ -1,10 +1,5 @@
 ## 介绍
-本博客基于 [hexo](https://hexo.io) 搭建，使用 [pure](https://github.com/cofess/hexo-theme-pure) 主题，网址 [https://www.tangwenyong.com](https://www.tangwenyong.com)。
-## 开始
-1. 安装依赖 `npm i`
-2. 本地运行 `hexo s`
-3. 生成静态 `hexo g`
-4. 部署 `hexo d`
+本博客主要分享Web前端相关技术。
 
 ## 文章列表
 #### Node
